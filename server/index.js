@@ -3,7 +3,7 @@ import fs from "fs"
 
 const server = http.createServer((req,res) => {
   let pageContent = ""
-  fs.readFile("/home/red/vd/index.html","utf-8",(err,data) => {
+  fs.readFile("/home/red/vd/server/index.html","utf-8",(err,data) => {
    if(!err && data){
      pageContent = data
    } 
